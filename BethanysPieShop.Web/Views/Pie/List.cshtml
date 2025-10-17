@@ -1,0 +1,14 @@
+﻿@using BethanysPieShop.Web.Models
+@model IEnumerable<Pie>
+
+<html>
+<body>
+	<h1>@ViewBag.Category</h1>
+	@foreach (var pie in Model)
+	{
+		<h2>@pie.Name</h2>
+		<p>@pie.LongDescription</p>
+	}
+
+</body>
+</html>
